@@ -6,36 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="resources/bootstrap-5.1.0-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="resources/style/index.css">
-    <link rel="stylesheet" href="resources/fonts/fontawesome-free-5.15.4-web/css/all.css">
-    <script src="/resources/bootstrap-5.1.0-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./resources/bootstrap-5.1.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./resources/style/index.css">
+    <link rel="stylesheet" href="./resources/fonts/fontawesome-free-5.15.4-web/css/all.css">
+    <script src="./resources/bootstrap-5.1.0-dist/js/bootstrap.js"></script>
 </head>
 
 <body>
     <!--Begin: Đầu mục-->
     <header class="header">
         <section class="container">
-            <nav class="logo">
+            <div class="logo">
                 <a href="#">
-                    <img src="resources/img/header/logo_PHILONG-LOGO-min-cn.png" title="Trang chủ Phi long"
+                    <img src="./resources/img/header/logo_PHILONG-LOGO-min-cn.png" title="Trang chủ Phi long"
                         alt="Phi Long Technology">
                 </a>
-            </nav>
+            </div>
             <div class="search">
                 <div class="main-search">
                     <form action="/tim">
-                        <input type="hidden">
                         <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Tất cả danh mục
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
                         </div>
                         <div class="form-search">
                             <input type="text" placeholder="Nhập tên sản phẩm, mã sản phẩm, từ khóa cần tìm,..."
@@ -49,9 +43,9 @@
             </div>
             <div class="cart">
                 <ul>
-                    <li class="news animated-hover">
+                    <li>
                         <a href="#" class="img">
-                            <img src="/resources/img/header/icon-tin-tuc-2019.png"
+                            <img src="./resources/img/header/icon-tin-tuc-2019.png"
                                 alt="tin tức, khuyến mãi, tin công nghệ tại phi long">
                         </a>
                         <a href="#">Tin tức</a>
@@ -66,16 +60,16 @@
 
                         </ul>
                     </li>
-                    <li class="animated-hover">
+                    <li>
                         <a href="#" class="img">
-                            <img src="/resources/img/header/icon-build-pc-2019.png"
+                            <img src="./resources/img/header/icon-build-pc-2019.png"
                                 alt="Xây dựng cấu hình máy tính tại Phi Long">
                         </a>
                         <a href="#">Xây dựng PC</a>
                     </li>
-                    <li class="animated-hover">
+                    <li>
                         <a href="#" class="img">
-                            <img src="/resources/img/header/icon-gio-hang-2019.png" alt="Giỏ hàng online Phi Long">
+                            <img src="./resources/img/header/icon-gio-hang-2019.png" alt="Giỏ hàng online Phi Long">
                         </a>
                         <a href="#">Giỏ hàng</a>
                     </li>
@@ -92,18 +86,20 @@
                     </h3>
                 </div>
                 <div class="bar">
-                    <div class="bar-child">
-                        <div class="bar-content">
-                            <img src="/resources/img/header/hopqua_33x33-phi-long.gif" alt="">
+                    <ul>
+                        <li class="bar-img">
+                            <img src="./resources/img/header/hopqua_33x33-phi-long.gif" alt="">
+                        </li>
+                        <li>
                             <a href="#">Top Laptop đồ hoạ và gaming</a>
-                        </div>
-                        <div class="bar-content">
+                        </li>
+                        <li>
                             <a href="#">Microsoft 365 bản quyền chỉ 790.000</a>
-                        </div>
-                        <div class="bar-content">
+                        </li>
+                        <li>
                             <a href="#">PC MSI - Sức mạnh nhà rồng</a>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -111,27 +107,25 @@
     <div class="slider">
         <a href="https://www.nvidia.com/vi-vn/geforce/campaigns/battlefield-2042-bundle/"
             alt="Bấm vào xem chi tiết ngay!" target="_blank">
-            <img src="/resources/img/slider/23_Aug0aaa2b8130d642df0cc19503001ccee1.png" class="img-fluid"
+            <img src="./resources/img/slider/23_Aug0aaa2b8130d642df0cc19503001ccee1.png" class="img-fluid"
                 alt="Responsive image">
         </a>
     </div>
     <!-- End: Đầu mục -->
 
-    <!--Nội dung-->
+    <!--Begin: Nội dung-->
     <div class="content">
         <!--Begin: Hotsales-->
         <div class="container">
-            <div class="p-title ">
-                <h3 class="title-text ">Sản phẩm khuyến mãi hot nhất</h3>
-            </div>
+                <h3 class="p-title">Sản phẩm khuyến mãi hot nhất</h3>
             <!--Sản phẩm 1-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/hotsales/250-21819-2.png"
+                    <img src="./resources/img/product/hotsales/250-21819-2.png"
                         alt="Laptop ACER Aspire 3 A315-56-37DV (i3-1005G1, Ram 4GB, SSD 256GB, màn hình 15.6FHD, W10 home">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/acer.png" alt="acer">
+                    <img src="./resources/img/brand/acer.png" alt="acer">
                 </div>
                 <div class="p-type">
                     <i class="p-label bestsale">Bán chạy</i>
@@ -149,11 +143,11 @@
             <!--Sản phẩm 2-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/hotsales/250-24463-17zd90p-g-ax71a5-cn-15062021.png"
+                    <img src="./resources/img/product/hotsales/250-24463-17zd90p-g-ax71a5-cn-15062021.png"
                         alt="Laptop LG Gram 2021 17ZD90P-G.AX71A5 (Core i7-1165G7, Ram 16GB, 256Gb SSD, Màn hình 17, Free Dos)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/lg.png" alt="lg">
+                    <img src="./resources/img/brand/lg.png" alt="lg">
                 </div>
                 <div class="p-type">
                     <i class="p-label new-product">Hàng mới</i>
@@ -172,11 +166,11 @@
             <!--Sản phẩm 3-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/hotsales/250-24458-14z90p-g-ah75a5.png"
+                    <img src="./resources/img/product/hotsales/250-24458-14z90p-g-ah75a5.png"
                         alt="Laptop LG Gram 2021 14Z90P-G.AH75A5 (Core i7-1165G7, Ram 16GB, SSD 512GB, màn hình 14, Win 10)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/lg.png" alt="lg">
+                    <img src="./resources/img/brand/lg.png" alt="lg">
                 </div>
                 <div class="p-type">
                     <i class="p-label new-product">Hàng mới</i>
@@ -194,11 +188,11 @@
             <!--Sản phẩm 4-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/hotsales/250-24687-lg_27gp850_c200874aca254feba98022332254b1a5-cn.jpeg"
+                    <img src="./resources/img/product/hotsales/250-24687-lg_27gp850_c200874aca254feba98022332254b1a5-cn.jpeg"
                         alt="Màn hình Gaming 2K 27 LG 27GP850-B (IPS,2K,165HZ,1MS,HDR400)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/lg.png" alt="lg">
+                    <img src="./resources/img/brand/lg.png" alt="lg">
                 </div>
                 <div class="p-type">
                     <i class="p-label new-product">Hàng mới</i>
@@ -215,11 +209,11 @@
             <!--Sản phẩm 5-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/hotsales/250-24310-005t.jpeg"
+                    <img src="./resources/img/product/hotsales/250-24310-005t.jpeg"
                         alt="LAPTOP ASUS TUF A15 FA506QM HN005T (R7-5800H/Ram 16GB/SSD 1TB/Màn hình 15.6 FHD/VGA 6GB RTX3060/WIN 10)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/asus.png" alt="asus">
+                    <img src="./resources/img/brand/asus.png" alt="asus">
                 </div>
                 <div class="p-type">
                     <i class="p-label new-product">Hàng mới</i>
@@ -238,17 +232,15 @@
         </div>
         <!--Laptop-->
         <div class="container">
-            <div class="p-title ">
-                <h3 class="title-text ">Máy tính xách tay</h3>
-            </div>
+                <h3 class="p-title">Máy tính xách tay</h3>
             <!--Sản phẩm 1-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/laptops/250-25652-"
+                    <img src="./resources/img/product/laptops/250-25652-"
                         alt="Laptop LG Gram 2021 16ZD90P-G.AX54A5 (Core i5-1135G7, Ram 8Gb, SSD 512GB, Màn hình 16, Free Dos)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/lg.png" alt="lg">
+                    <img src="./resources/img/brand/lg.png" alt="lg">
                 </div>
                 <div class="p-type">
                     <i class="p-label new-product">Hàng mới</i>
@@ -266,11 +258,11 @@
             <!--Sản phẩm 2-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/laptops/laptop2"
+                    <img src="./resources/img/product/laptops/laptop2"
                         alt="Laptop LG Gram 2021 14ZD90P-G.AX51A5 (Core i5-1135G7, Ram 8Gb, SSd 256GB, màn hình 14, Free Dos)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/lg.png" alt="lg">
+                    <img src="./resources/img/brand/lg.png" alt="lg">
                 </div>
                 <div class="p-type">
                     <i class="p-label new-product">Hàng mới</i>
@@ -288,11 +280,11 @@
             <!--Sản phẩm 3-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/laptops/laptop3.png"
+                    <img src="./resources/img/product/laptops/laptop3.png"
                         alt="Laptop MSI Summit E13 Flip Evo (A11MT-211VN) (i7 1185G7/16GB RAM/1TB SSD/13.4 inch FHD Touch/Win10/Bút MSI/Đen) (2021)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/msi.png" alt="msi">
+                    <img src="./resources/img/brand/msi.png" alt="msi">
                 </div>
                 <div class="p-type">
                     <i class="p-label new-product"></i>
@@ -310,11 +302,11 @@
             <!--Sản phẩm 4-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/laptops/laptop4.jpeg"
+                    <img src="./resources/img/product/laptops/laptop4.jpeg"
                         alt="Laptop Asus Tuf Gaming FX706HC-HN003T (i5-11400H, Ram 8GB, SSD 512GB, Màn hình 17.3inch FHD 144Hz, RTX3050 4GB, Win 10)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/lg.png" alt="lg">
+                    <img src="./resources/img/brand/lg.png" alt="lg">
                 </div>
                 <div class="p-type">
                     <i class="p-label bestsale">Bán chạy</i>
@@ -332,11 +324,11 @@
             <!--Sản phẩm 5-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/laptops/laptop5.png"
+                    <img src="./resources/img/product/laptops/laptop5.png"
                         alt="LAPTOP DELL XPS 13 9310 (JGNH62) (i7-1165G7, Ram 16GB, SSD 512GB, Màn hình 13.4 chuẩn 4K cảm ứng, xoay gập 360 độ, Win 10 + Office, Màu bạc)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/dell.png" alt="dell">
+                    <img src="./resources/img/brand/dell.png" alt="dell">
                 </div>
                 <div class="p-type">
                     <i class="p-label new-product"></i>
@@ -354,17 +346,15 @@
         </div>
         <!--PC, AIO, SERVER-->
         <div class="container">
-            <div class="p-title ">
-                <h3 class="title-text ">PC, AIO, SERVER</h3>
-            </div>
+                <h3 class="p-title">PC, AIO, SERVER</h3>
             <!--Sản phẩm 1-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/hotsales/250-21819-2.png"
+                    <img src="./resources/img/product/hotsales/250-21819-2.png"
                         alt="Laptop ACER Aspire 3 A315-56-37DV (i3-1005G1, Ram 4GB, SSD 256GB, màn hình 15.6FHD, W10 home">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/acer.png" alt="acer">
+                    <img src="./resources/img/brand/acer.png" alt="acer">
                 </div>
                 <div class="p-type">
                     <i class="p-label bestsale">Bán chạy</i>
@@ -382,11 +372,11 @@
             <!--Sản phẩm 2-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/hotsales/250-24463-17zd90p-g-ax71a5-cn-15062021.png"
+                    <img src="./resources/img/product/hotsales/250-24463-17zd90p-g-ax71a5-cn-15062021.png"
                         alt="Laptop LG Gram 2021 17ZD90P-G.AX71A5 (Core i7-1165G7, Ram 16GB, 256Gb SSD, Màn hình 17, Free Dos)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/lg.png" alt="lg">
+                    <img src="./resources/img/brand/lg.png" alt="lg">
                 </div>
                 <div class="p-type">
                     <i class="p-label new-product">Hàng mới</i>
@@ -405,11 +395,11 @@
             <!--Sản phẩm 3-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/hotsales/250-24458-14z90p-g-ah75a5.png"
+                    <img src="./resources/img/product/hotsales/250-24458-14z90p-g-ah75a5.png"
                         alt="Laptop LG Gram 2021 14Z90P-G.AH75A5 (Core i7-1165G7, Ram 16GB, SSD 512GB, màn hình 14, Win 10)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/lg.png" alt="lg">
+                    <img src="./resources/img/brand/lg.png" alt="lg">
                 </div>
                 <div class="p-type">
                     <i class="p-label new-product">Hàng mới</i>
@@ -427,11 +417,11 @@
             <!--Sản phẩm 4-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/hotsales/250-24687-lg_27gp850_c200874aca254feba98022332254b1a5-cn.jpeg"
+                    <img src="./resources/img/product/hotsales/250-24687-lg_27gp850_c200874aca254feba98022332254b1a5-cn.jpeg"
                         alt="Màn hình Gaming 2K 27 LG 27GP850-B (IPS,2K,165HZ,1MS,HDR400)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/lg.png" alt="lg">
+                    <img src="./resources/img/brand/lg.png" alt="lg">
                 </div>
                 <div class="p-type">
                     <i class="p-label new-product">Hàng mới</i>
@@ -448,11 +438,11 @@
             <!--Sản phẩm 5-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/hotsales/250-24310-005t.jpeg"
+                    <img src="./resources/img/product/hotsales/250-24310-005t.jpeg"
                         alt="LAPTOP ASUS TUF A15 FA506QM HN005T (R7-5800H/Ram 16GB/SSD 1TB/Màn hình 15.6 FHD/VGA 6GB RTX3060/WIN 10)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/asus.png" alt="asus">
+                    <img src="./resources/img/brand/asus.png" alt="asus">
                 </div>
                 <div class="p-type">
                     <i class="p-label new-product">Hàng mới</i>
@@ -471,17 +461,15 @@
         </div>
         <!--MÀN HÌNH MÁY TÍNH-->
         <div class="container">
-            <div class="p-title ">
-                <h3 class="title-text ">MÀN HÌNH MÁY TÍNH</h3>
-            </div>
+                <h3 class="p-title">MÀN HÌNH MÁY TÍNH</h3>
             <!--Sản phẩm 1-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/hotsales/250-21819-2.png"
+                    <img src="./resources/img/product/hotsales/250-21819-2.png"
                         alt="Laptop ACER Aspire 3 A315-56-37DV (i3-1005G1, Ram 4GB, SSD 256GB, màn hình 15.6FHD, W10 home">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/acer.png" alt="acer">
+                    <img src="./resources/img/brand/acer.png" alt="acer">
                 </div>
                 <div class="p-type">
                     <i class="p-label bestsale">Bán chạy</i>
@@ -499,11 +487,11 @@
             <!--Sản phẩm 2-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/hotsales/250-24463-17zd90p-g-ax71a5-cn-15062021.png"
+                    <img src="./resources/img/product/hotsales/250-24463-17zd90p-g-ax71a5-cn-15062021.png"
                         alt="Laptop LG Gram 2021 17ZD90P-G.AX71A5 (Core i7-1165G7, Ram 16GB, 256Gb SSD, Màn hình 17, Free Dos)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/lg.png" alt="lg">
+                    <img src="./resources/img/brand/lg.png" alt="lg">
                 </div>
                 <div class="p-type">
                     <i class="p-label new-product">Hàng mới</i>
@@ -522,11 +510,11 @@
             <!--Sản phẩm 3-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/hotsales/250-24458-14z90p-g-ah75a5.png"
+                    <img src="./resources/img/product/hotsales/250-24458-14z90p-g-ah75a5.png"
                         alt="Laptop LG Gram 2021 14Z90P-G.AH75A5 (Core i7-1165G7, Ram 16GB, SSD 512GB, màn hình 14, Win 10)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/lg.png" alt="lg">
+                    <img src="./resources/img/brand/lg.png" alt="lg">
                 </div>
                 <div class="p-type">
                     <i class="p-label new-product">Hàng mới</i>
@@ -544,11 +532,11 @@
             <!--Sản phẩm 4-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/hotsales/250-24687-lg_27gp850_c200874aca254feba98022332254b1a5-cn.jpeg"
+                    <img src="./resources/img/product/hotsales/250-24687-lg_27gp850_c200874aca254feba98022332254b1a5-cn.jpeg"
                         alt="Màn hình Gaming 2K 27 LG 27GP850-B (IPS,2K,165HZ,1MS,HDR400)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/lg.png" alt="lg">
+                    <img src="./resources/img/brand/lg.png" alt="lg">
                 </div>
                 <div class="p-type">
                     <i class="p-label new-product">Hàng mới</i>
@@ -565,11 +553,11 @@
             <!--Sản phẩm 5-->
             <div class="p-item">
                 <a href="#" class="p-img">
-                    <img src="/resources/img/product/hotsales/250-24310-005t.jpeg"
+                    <img src="./resources/img/product/hotsales/250-24310-005t.jpeg"
                         alt="LAPTOP ASUS TUF A15 FA506QM HN005T (R7-5800H/Ram 16GB/SSD 1TB/Màn hình 15.6 FHD/VGA 6GB RTX3060/WIN 10)">
                 </a>
                 <div class="p-brand">
-                    <img src="/resources/img/brand/asus.png" alt="asus">
+                    <img src="./resources/img/brand/asus.png" alt="asus">
                 </div>
                 <div class="p-type">
                     <i class="p-label new-product">Hàng mới</i>
@@ -726,10 +714,10 @@
                     </p>
                     <div class="logo-announcement">
                         <a href="">
-                            <img src="/resources/img/footer/dathongbao.png" alt="đăng ký bộ công thương">
+                            <img src="./resources/img/footer/dathongbao.png" alt="đăng ký bộ công thương">
                         </a>
                         <a href="">
-                            <img src="/resources/img/footer/dmca-protected.png"
+                            <img src="./resources/img/footer/dmca-protected.png"
                                 alt="DMCA.com Protection Status for philong.com.vn">
                         </a>
                     </div>
