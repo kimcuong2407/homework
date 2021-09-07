@@ -4,41 +4,37 @@
     box-sizing: border-box;
 }
 .container {
-    margin-right: 120px;
-    margin-left: 120px;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    content: " ";
     overflow: auto;
 }
 /*HEADER*/
 header {
     background-color: black;
 }
-/*logo*/
 .logo, .search, .cart {
-    position: relative;
-    min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
     display: block;
 }
+/*logo*/
 .header .container .logo {
     width: 25%;
     float: left;
-
 }
 a {
-    color: #333;
+    display: block;
     text-decoration: none;
-    background-color: transparent;
+    color: #333;
 }
 .header .container .logo a img {
     max-width: 197px;
     margin: 33px 30px 25px;
 }
 /*search*/
-.header .container .search {
+.header .search {
     width: 41.66666667%;
     float: left;
 }
@@ -47,28 +43,30 @@ a {
     height: 40px;
     margin: 43px 0 35px;
     position: relative;
-    z-index: 111
 }
 .header .search form {
     background-color: #fff;
     height: 100%;
     border-radius: 3px;
 }
-.dropdown {
+header .search .dropdown {
     width: 170px;
+    height: 100%;
     float: left;
 }
 .header .search .form-search {
     float: right;
     width: calc(100% - 170px);
+    height: 100%;
     position: relative;
 }
 .header .search .form-search input {
     width: 100%;
+    height: 100%;
     border: none;
-    background-color: transparent;
-    line-height: 38px;
-    padding-right: 50px;
+    outline: none;
+    border-left: 1px solid #e2e2e2;
+    padding-left: 3px;
 }
 .search-btn {
     position: absolute;
@@ -101,15 +99,14 @@ a {
     float: left;
     text-align: center;
     width: 80px;
-    height: 57px;
     position: relative;
-    display: list-item;
 }
 .cart ul li a {
     display: block;
     font-size: 9.75359pt;
     color: #fff;
     margin-top: 5px;
+    text-decoration: none
 }
 .cart ul li .img {
     height: 30px;
@@ -142,13 +139,10 @@ a {
     color: #000;
     font-size: 14px;
 }
-.news:hover + .child {
-    display: block;
-    position: absolute;
-}
-.animated-hover:hover {
+.cart li:hover a {
     color: red;
-} 
+}
+
 /*menu header*/
 .menu-header {
     background-color: #fff;
@@ -167,7 +161,6 @@ a {
     padding-left: 10px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: .5s ease-out;
     margin: 0;
     font-size: 16px;
 }
@@ -182,23 +175,29 @@ a {
     float: left;
     width: calc(100% - 250px);
 }
-.menu-header .bar .bar-child {
+.menu-header .bar ul {
     height: 40px;
     padding: 10px 0;
     margin-right: 150px;
     display: flex;
+    margin: 0px;
 }
-.menu-header .bar .bar-child .bar-content {
+.menu-header .bar ul li {
     border-right: 1px solid #e2e2e2;
     position: relative;
     width: auto;
-    float: left;
     padding: 0 25px;
     font-size: 14px;
+    list-style-type: none;
 }
-.menu-header .bar .bar-child .bar-content img{
-    margin-bottom: 5px;
-    float: left;
+.menu-header .bar ul li:first-child{
+    width: auto;
+    border: none;
+    padding: 0px 0px 0px 25px;
+    height: 30px;
+}
+.menu-header .bar ul li img {
+    padding-bottom: 10px;
 }
 /*slider*
 .slider {
@@ -215,12 +214,14 @@ a {
 .content {
     background-color: #f0f0f0;
 }
+.content .container {
+    margin-right: 120px;
+    margin-left: 120px;
+    
+}
 .content .p-title {
-    height: 28x;
     margin: 15px 0;
     padding-left: 0;
-}
-.content .p-title .title-text {
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 700
@@ -285,3 +286,75 @@ a {
     font-weight: 700;
 }
 /* footer */
+.footer {
+    margin-top: 20px;
+}
+.footer-container {
+    background-color: #fff;
+}
+.footer-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-container ul li {
+    padding: 3px 0px;
+}
+.footer-container ul li a {
+    font-size: 14px;
+}
+.footer-container .f-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 18px 0px;
+}
+.footer-container .information {
+    float: left;
+    padding: 0px 15px;
+    width: 16%;
+}
+.footer-container .customer-support {
+    float: left;
+    padding: 0px 15px;
+    width: 20%;
+}
+.footer-container .branch {
+    float: left;
+    padding: 0px 15px;
+    width: 30%;
+}
+.footer-container .branch .red {
+    color: red;
+}
+.footer-container .branch p {
+    font-size: 14px;
+}
+.footer-container .customer-care {
+    float: left;
+    width: 30%;
+    padding: 0px 15px;
+}
+.footer-container .customer-care .social-footer {
+    display: flex;
+}
+.footer-container .customer-care .social-footer li {
+    padding-right: 10px;
+}
+.copy-right {
+    background-color: #f2f2f2;
+}
+.copy-right p {
+    margin: 12px 0px;
+    text-align: center;
+    width: 100%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+}
+.copy-right a {
+    display: inline;
+}
+.copy-right .logo-announcement {
+    text-align: center;
+}
